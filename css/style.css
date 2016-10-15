@@ -90,7 +90,7 @@ a {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    padding: 0 12%;
+    padding: 2% 12%;
 }
 
 header {
@@ -174,18 +174,24 @@ header .tagline {
     transform: translate(-50%, -50%);
 }
 
-h2 {
+h2 a {
+    color: #606161;
     font-weight: 500;
     font-size: 30px;
     margin-top: 20px;
 }
 
+h2 a:hover {
+    color: #ffffff;
+}
+
 h3 {
+    color: #606161;
     font-weight: 400;
     font-size: 24px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .specialcontainer p {
@@ -211,11 +217,23 @@ section {
     padding-bottom: 30px;
 }
 
-#niacinamide {
+#starproduct .niacinamide {
     position: absolute;
     top: 128%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 350px;
+    width: 329px;
+    display: inline-block;
+    margin: 20px;
+    background: url(../asset/7980original.png) no-repeat center;
+    transition: background .2s ease;
+    background-size: contain;
+}
+
+#starproduct .niacinamide:hover {
+    background: url(../asset/7980.png) no-repeat center;
+    background-size: contain;
 }
 
 #owl-demo .item {
@@ -246,7 +264,7 @@ section {
     shadow
 }
 
-#sotherpcgroup {
+#otherpcgroup {
     width: 100%;
 }
 
@@ -268,6 +286,10 @@ section {
     text-align: center;
 }
 
+.skintypeoption a {
+    color: #8d8d8d;
+}
+
 .skintypeoption p a:hover {
     color: #27bbcd;
     text-decoration: underline;
@@ -280,20 +302,101 @@ section {
     float: right;
 }
 
+.pcinfo div {
+    position: relative;
+}
+
+.pcinfo a {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 10px 0;
+    text-align: center;
+    background: #27bbcd;
+    color: white;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 5px;
+    transition: opacity .5s ease;
+    font-size: 16px;
+}
+
 .pcinfo img {
     height: 225px;
     width: 100%;
     vertical-align: top;
+    transition: .5s ease;
 }
 
+.pcinfo div:hover a {
+    opacity: 1;
+}
+
+.pcinfo div:hover img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+
+/*
 #advice:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
 
 #crueltyfree:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+
+}*/
+
+#socialmedia p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer {
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #27bbcd;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#socialmedia {
+    text-align: center;
+}
+
+#socialmedia img {
+    margin: 40px;
+}
+
+#socialmedia span {
+    display: inline-block;
+    margin: 20px;
+}
+
+#socialmedia span.facebook {
+    height: 37px;
+    width: 17px;
+    background: url(../asset/facebook.png) no-repeat center;
+    transition: background .2s ease;
+}
+
+#socialmedia span.facebook:hover {
+    background: url(../asset/facebookhover.png) no-repeat center;
+}
+
+#socialmedia span.twitter {
+    height: 33px;
+    width: 43px;
+    background: url(../asset/twitter.png) no-repeat center;
+    transition: background .2s ease;
+}
+
+#socialmedia span.twitter:hover {
+    background: url(../asset/twitterhover.png) no-repeat center;
 }
 
 //**#posts {
